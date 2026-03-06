@@ -3,11 +3,11 @@ pipeline {
 
     stages {
 
-       stage('Clone Code') {
-    steps {
-        git branch: 'main', url: 'https://github.com/Reshma-0654/reshmashaik.git'
-    }
-}
+        stage('Clone Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Reshma-0654/reshmashaik.git'
+            }
+        }
 
         stage('Build Docker Image') {
             steps {
